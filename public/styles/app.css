@@ -1,0 +1,32 @@
+
+body {
+  font-size: 30px;
+  font-family: 'Helvetoca', sans-serif;
+}
+
+input,
+button {
+  font-size: inherit;
+}
+
+button {
+  border: 1px solid black;
+  background-color: lightblue;
+  cursor: pointer;
+}
+
+.multi-fieldsets {
+  position: relative;
+  width: 1000000px;
+  margin-left: 0vw;
+}
+
+.fieldset,
+fieldset {
+  float: left;
+  width: 100vw;
+  height: 100vh;
+  border-width: 0;
+  text-align: center;
+  padding-top: 100px;
+}
