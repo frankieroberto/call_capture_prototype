@@ -9,20 +9,20 @@
         }
         recognition.continuous = true;
         recognition.interimResults = true;
+        interimResult = '';
 
-        var interimResult = '';
-        var textArea = $('#speech-page-content');
-        var textAreaID = 'speech-page-content';
 
-        $('.speech-mic').click(function(){
-            startRecognition();
-        });
-
-        $('.speech-mic-works').click(function(){
+        $( ".speech-mic" ).toggle(function() {
+            textAreaID = this.getAttribute('data-dictation-id');
+            textArea = $("#" + textAreaID);
+            $(this).removeClass('speech-mic').addClass('speech-mic-works');
+            startRecognition(textArea);
+        }, function() {
+            $(this).removeClass('speech-mic-works').addClass('speech-mic');
             recognition.stop();
         });
 
-        var startRecognition = function() {
+        var startRecognition = function(textArea) {
             $('.speech-content-mic').removeClass('speech-mic').addClass('speech-mic-works');
             textArea.focus();
             recognition.start();
@@ -35,10 +35,10 @@
             textArea.setCursorPosition(pos);
             for (var i = event.resultIndex; i < event.results.length; ++i) {
                 if (event.results[i].isFinal) {
-                    insertAtCaret(textAreaID, event.results[i][0].transcript);
+                    insertAtCaret(textArea.attr('id'), event.results[i][0].transcript);
                 } else {
                     isFinished = false;
-                    insertAtCaret(textAreaID, event.results[i][0].transcript + '\u200B');
+                    insertAtCaret(textArea.attr('id'), event.results[i][0].transcript + '\u200B');
                     interimResult += event.results[i][0].transcript + '\u200B';
                 }
             }
@@ -47,5 +47,6 @@
         recognition.onend = function() {
             $('.speech-content-mic').removeClass('speech-mic-works').addClass('speech-mic');
         };
+        
     });
 })(jQuery);
