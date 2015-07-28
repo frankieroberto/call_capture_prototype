@@ -63,6 +63,33 @@ legend {
   position: relative;
 }
 
+.radio-options {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.response-scale {
+  padding: 1em 0;
+  display: table;
+  margin: 0 auto;
+}
+
+.response-scale .option {
+  width: 180px;
+  display: table-cell;
+}
+
+.response-scale .input {
+  display: block;
+  text-align: center;
+}
+
+.response-scale label {
+  display: block;
+  text-align: center;
+}
+
 
 .purple {
 	color: #55225D;
@@ -87,3 +114,4 @@ legend {
 .grey {
 	color: #eaeaea;
 }
+

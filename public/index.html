@@ -43,34 +43,87 @@
       </div>
 
       <div class="fieldset">
-        <label for="source_text">How did you hear about us?</label>
+
+        <div>
+          <h2>Age</h2>
+
+          <div class="age-list">
+            <div class="age-decade">
+              <label><input name="age" type="radio" value="50-54"></input>50-54</label>
+              <label><input name="age" type="radio" value="55-59"></input>55-59</label>
+            </div>
+            <div class="age-decade">
+              <label><input name="age" type="radio" value="60-64"></input>60-64</label>
+              <label><input name="age" type="radio" value="65-69"></input>65-69</label>
+            </div>
+            <div class="age-decade">
+              <label><input name="age" type="radio" value="70-74"></input>70-74</label>
+              <label><input name="age" type="radio" value="75-79"></input>75-79</label>
+            </div>
+            <div class="age-decade">
+              <label><input name="age" type="radio" value="80-84"></input>80-84</label>
+              <label><input name="age" type="radio" value="85-89"></input>85-89</label>
+            </div>
+            <div class="age-decade">
+              <label><input name="age" type="radio" value="90-94"></input>90-94</label>
+              <label><input name="age" type="radio" value="95-99"></input>95-99</label>
+            </div>
+            <div class="age-decade">
+              <label><input name="age" type="radio" value="100+"></input>100+</label>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+
+      <div class="fieldset">
+        <h2>How did you hear about us?</h2>
+
         <textarea type="text" id="source_text" name="source_text">
         </textarea>
 
-
-        <div><label><input type="radio" name="source" value="1">GP</input></label></div>
-        <div><label><input type="radio" name="source" value="2">Social Worker</input></label></div>
-        <div><label><input type="radio" name="source" value="3"></input>Service leaflet</label></div>
-        <div><label><input type="radio" name="source" value="4"></input>Website</label></div>
-        <div><label><input type="radio" name="source" value="5"></input>Word of mouth</label></div>
-        <div><label><input type="radio" name="source" value="6"></input>Another organisation</label></div>
-        <div><label><input type="radio" name="source" value="7"></input>National AgeUK</label></div>
+        <div class="radio-options">
+          <div><label><input type="radio" name="source" value="1">GP</input></label></div>
+          <div><label><input type="radio" name="source" value="2">Social Worker</input></label></div>
+          <div><label><input type="radio" name="source" value="3"></input>Service leaflet</label></div>
+          <div><label><input type="radio" name="source" value="4"></input>Website</label></div>
+          <div><label><input type="radio" name="source" value="5"></input>Word of mouth</label></div>
+          <div><label><input type="radio" name="source" value="6"></input>Another organisation</label></div>
+          <div><label><input type="radio" name="source" value="7"></input>National AgeUK</label></div>
+        </div>
 
       </div>
 
       <fieldset>
-        <h2>How ok are you at <strong>managing your home</strong>?</h2>
+        <h2>Managing your home?</h2>
 
         <label for="assessment_home_text">Notes / transcription</label>
         <textarea type="text" id="assessment_home_text" name="assessment_home_text">
         </textarea>
 
-        <h3>Now</h3>
-        <label><input type="radio" name="assessment_home" value="1">OK</label>
-        <label><input type="radio" name="assessment_home" value="2">(OK-OKish)</label>
-        <label><input type="radio" name="assessment_home" value="3">OKish</label>
-        <label><input type="radio" name="assessment_home" value="4">(OKish - not OK)</label>
-        <label><input type="radio" name="assessment_home" value="5">Not OK</label>
+        <div class="response-scale">
+          <div class="option">
+            <div class="input">
+              <input type="radio" name="assessment_home" value="1" id="assessment_home_ok">
+            </div>
+            <label for="assessment_home_ok">OK</label>
+          </div>
+          <div class="option">
+            <div class="input">
+              <input type="radio" name="assessment_home" value="3" id="assessment_home_okish">
+            </div>
+            <label for="assessment_home_okish">OKish</label>
+          </div>
+
+          <div class="option">
+            <div class="input">
+              <input type="radio" name="assessment_home" value="5" id="assessment_home_not_ok">
+            </div>
+            <label for="assessment_home_not_ok">Not OK</label>
+          </div>
+        </div>
 
         <div>
           <label for="home_needs_help">Is this something you need help with?</label>
@@ -81,17 +134,14 @@
       </fieldset>
 
       <fieldset>
-        <h2>How ok are you at looking after yourself?</h2>
+        <h2>Looking after yourself?</h2>
 
         <label for="assessment_self_text">Notes / transcription</label>
         <textarea type="text" id="assessment_self_text" name="assessment_self_text">
         </textarea>
 
-        <h3>Now</h3>
         <label><input type="radio" name="assessment_self" value="1">OK</label>
-        <label><input type="radio" name="assessment_self" value="2">(OK-OKish)</label>
         <label><input type="radio" name="assessment_self" value="3">OKish</label>
-        <label><input type="radio" name="assessment_self" value="4">(OKish - not OK)</label>
         <label><input type="radio" name="assessment_self" value="5">Not OK</label>
 
         <div>
@@ -102,17 +152,14 @@
       </fieldset>
 
       <fieldset>
-        <h2>How ok are you at looking keeping safe?</h2>
+        <h2>Keeping safe?</h2>
 
         <label for="assessment_safety_text">Notes / transcription</label>
         <textarea type="text" id="assessment_safety_text" name="assessment_safety_text">
         </textarea>
 
-        <h3>Now</h3>
         <label><input type="radio" name="assessment_safety" value="1">OK</label>
-        <label><input type="radio" name="assessment_safety" value="2">(OK-OKish)</label>
         <label><input type="radio" name="assessment_safety" value="3">OKish</label>
-        <label><input type="radio" name="assessment_safety" value="4">(OKish - not OK)</label>
         <label><input type="radio" name="assessment_safety" value="5">Not OK</label>
 
         <div>
@@ -123,17 +170,14 @@
       </fieldset>
 
       <fieldset>
-        <h2>How ok are you at managing your money?</h2>
+        <h2>Managing your money?</h2>
 
         <label for="assessment_money_text">Notes / transcription</label>
         <textarea type="text" id="assessment_money_text" name="assessment_money_text">
         </textarea>
 
-        <h3>Now</h3>
         <label><input type="radio" name="assessment_money" value="1">OK</label>
-        <label><input type="radio" name="assessment_money" value="2">(OK-OKish)</label>
         <label><input type="radio" name="assessment_money" value="3">OKish</label>
-        <label><input type="radio" name="assessment_money" value="4">(OKish - not OK)</label>
         <label><input type="radio" name="assessment_money" value="5">Not OK</label>
 
         <div>
@@ -144,17 +188,14 @@
       </fieldset>
 
       <fieldset>
-        <h2>How ok are you at feeling happy / positive?</h2>
+        <h2>Feeling positive?</h2>
 
         <label for="assessment_happiness_text">Notes / transcription</label>
         <textarea type="text" id="assessment_happiness_text" name="assessment_happiness_text">
         </textarea>
 
-        <h3>Now</h3>
         <label><input type="radio" name="assessment_happiness" value="1">OK</label>
-        <label><input type="radio" name="assessment_happiness" value="2">(OK-OKish)</label>
         <label><input type="radio" name="assessment_happiness" value="3">OKish</label>
-        <label><input type="radio" name="assessment_happiness" value="4">(OKish - not OK)</label>
         <label><input type="radio" name="assessment_happiness" value="5">Not OK</label>
 
         <div>
@@ -171,11 +212,8 @@
         <textarea type="text" id="assessment_social_text" name="assessment_social_text">
         </textarea>
 
-        <h3>Now</h3>
         <label><input type="radio" name="assessment_social" value="1">OK</label>
-        <label><input type="radio" name="assessment_social" value="2">(OK-OKish)</label>
         <label><input type="radio" name="assessment_social" value="3">OKish</label>
-        <label><input type="radio" name="assessment_social" value="4">(OKish - not OK)</label>
         <label><input type="radio" name="assessment_social" value="5">Not OK</label>
 
 
