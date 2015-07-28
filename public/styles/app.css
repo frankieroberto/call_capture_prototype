@@ -1,4 +1,3 @@
-
 body {
   font-size: 30px;
   font-family: 'Helvetoca', sans-serif;
@@ -29,4 +28,28 @@ fieldset {
   border-width: 0;
   text-align: center;
   padding-top: 100px;
+}
+
+.purple {
+	color: #55225D;
+}
+.pink {
+	color: #CB007A;
+
+}
+.blue {
+	color: #141760;
+
+}
+.teal {
+	color: #0076A3;
+}
+.orange {
+	color: #C34306;
+}
+.lightPurple {
+	color: #83034F;
+}
+.grey {
+	color: #eaeaea;
 }
