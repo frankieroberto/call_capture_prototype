@@ -36,9 +36,11 @@
 
       <div>
         <label for="source_text">How did you hear about us?</label>
-        <textarea type="text" id="source_text" name="source_text">
-        </textarea>
-
+        
+        <div id="speech-content-elements">
+          <textarea type="text" id="source_text" name="source_text"></textarea>
+          <div class="speech-content-mic speech-mic" data-dictation-id="source_text">
+        </div>
 
         <div><label><input type="radio" name="source" value="1">GP</input></label></div>
         <div><label><input type="radio" name="source" value="2">Social Worker</input></label></div>
@@ -54,8 +56,11 @@
         <legend>How ok are you at managing your home?</legend>
 
         <label for="assessment_home_text">Notes / transcription</label>
-        <textarea type="text" id="assessment_home_text" name="assessment_home_text">
-        </textarea>
+
+        <div id="speech-content-elements">
+          <textarea type="text" id="assessment_home_text" name="assessment_home_text"></textarea>
+          <div class="speech-content-mic speech-mic" data-dictation-id="assessment_home_text">
+        </div>
 
         <h3>Now</h3>
         <label><input type="radio" name="assessment_home" value="1">OK</label>
@@ -76,8 +81,11 @@
         <legend>How ok are you at looking after yourself?</legend>
 
         <label for="assessment_self_text">Notes / transcription</label>
-        <textarea type="text" id="assessment_self_text" name="assessment_self_text">
-        </textarea>
+
+        <div id="speech-content-elements">
+          <textarea type="text" id="assessment_self_text" name="assessment_self_text"></textarea>
+          <div class="speech-content-mic speech-mic" data-dictation-id="assessment_self_text">
+        </div>
 
         <h3>Now</h3>
         <label><input type="radio" name="assessment_self" value="1">OK</label>
@@ -97,8 +105,11 @@
         <legend>How ok are you at looking keeping safe?</legend>
 
         <label for="assessment_safety_text">Notes / transcription</label>
-        <textarea type="text" id="assessment_safety_text" name="assessment_safety_text">
-        </textarea>
+        
+        <div id="speech-content-elements">
+          <textarea type="text" id="assessment_safety_text" name="assessment_safety_text"></textarea>
+          <div class="speech-content-mic speech-mic" data-dictation-id="assessment_safety_text">
+        </div>
 
         <h3>Now</h3>
         <label><input type="radio" name="assessment_safety" value="1">OK</label>
@@ -118,8 +129,11 @@
         <legend>How ok are you at managing your money?</legend>
 
         <label for="assessment_money_text">Notes / transcription</label>
-        <textarea type="text" id="assessment_money_text" name="assessment_money_text">
-        </textarea>
+        
+        <div id="speech-content-elements">
+          <textarea type="text" id="assessment_money_text" name="assessment_money_text"></textarea>
+          <div class="speech-content-mic speech-mic" data-dictation-id="assessment_money_text">
+        </div>
 
         <h3>Now</h3>
         <label><input type="radio" name="assessment_money" value="1">OK</label>
@@ -139,8 +153,11 @@
         <legend>How ok are you at feeling happy / positive?</legend>
 
         <label for="assessment_happiness_text">Notes / transcription</label>
-        <textarea type="text" id="assessment_happiness_text" name="assessment_happiness_text">
-        </textarea>
+        
+        <div id="speech-content-elements">
+          <textarea type="text" id="assessment_happiness_text" name="assessment_happiness_text"></textarea>
+          <div class="speech-content-mic speech-mic" data-dictation-id="assessment_happiness_text">
+        </div>
 
         <h3>Now</h3>
         <label><input type="radio" name="assessment_happiness" value="1">OK</label>
@@ -160,8 +177,11 @@
         <legend>How ok are you at meeting people and doing things?</legend>
 
         <label for="assessment_social_text">Notes / transcription</label>
-        <textarea type="text" id="assessment_social_text" name="assessment_social_text">
-        </textarea>
+
+        <div id="speech-content-elements">
+          <textarea type="text" id="assessment_social_text" name="assessment_social_text"></textarea>
+          <div class="speech-content-mic speech-mic" data-dictation-id="assessment_social_text">
+        </div>
 
         <h3>Now</h3>
         <label><input type="radio" name="assessment_social" value="1">OK</label>
@@ -177,11 +197,6 @@
         </div>
 
       </fieldset>
-
-      <div id="speech-content-elements">
-        <textarea id="speech-page-content" name="pageContent"></textarea>
-        <div class="speech-content-mic speech-mic">
-      </div>
 
     </form>
 
