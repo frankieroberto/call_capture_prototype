@@ -11,30 +11,38 @@
     <script src="/javascripts/jquery.min.js"></script>
     <script src="/javascripts/textarea-helper.js"></script>
     <script src="/javascripts/speech-recogniser.js"></script>
+    <script src="/javascripts/page-controls.js"></script>
   </head>
   <body>
 
-    <form>
+    <form class="multi-fieldsets" id="multi-page-form">
+
+      <div class="fieldset">
+        <div class="button button-advance">Start Call</div>
+      </div>
 
 
-      <div>
+      <div class="fieldset">
         <label for="caller">Caller name</label>
-        <input type="text" id="caller" name="caller"></input>
+        <input type="text" id="caller" name="caller" class="textfield-advance"></input>
       </div>
 
 
-      <div>
-        <label for="postcode">Postcode</label>
-        <input type="text" id="postcode" name="postcode"></input>
+      <div class="fieldset">
+
+        <div>
+          <label for="subject">Subject name</label>
+          <input type="text" id="subject" name="subject"></input>
+        </div>
+
+        <div>
+          <label for="postcode">Subject Postcode</label>
+          <input type="text" id="postcode" name="postcode" class="textfield-advance"></input>
+        </div>
+
       </div>
 
-
-      <div>
-        <label for="subject">Subject name</label>
-        <input type="text" id="subject" name="subject"></input>
-      </div>
-
-      <div>
+      <div class="fieldset">
         <label for="source_text">How did you hear about us?</label>
         
         <div id="speech-content-elements">
@@ -53,7 +61,7 @@
       </div>
 
       <fieldset>
-        <legend>How ok are you at managing your home?</legend>
+        <h2>How ok are you at <strong>managing your home</strong>?</h2>
 
         <label for="assessment_home_text">Notes / transcription</label>
 
@@ -78,7 +86,7 @@
       </fieldset>
 
       <fieldset>
-        <legend>How ok are you at looking after yourself?</legend>
+        <h2>How ok are you at looking after yourself?</h2>
 
         <label for="assessment_self_text">Notes / transcription</label>
 
@@ -102,7 +110,7 @@
       </fieldset>
 
       <fieldset>
-        <legend>How ok are you at looking keeping safe?</legend>
+        <h2>How ok are you at looking keeping safe?</h2>
 
         <label for="assessment_safety_text">Notes / transcription</label>
         
@@ -126,7 +134,7 @@
       </fieldset>
 
       <fieldset>
-        <legend>How ok are you at managing your money?</legend>
+        <h2>How ok are you at managing your money?</h2>
 
         <label for="assessment_money_text">Notes / transcription</label>
         
@@ -150,7 +158,7 @@
       </fieldset>
 
       <fieldset>
-        <legend>How ok are you at feeling happy / positive?</legend>
+        <h2>How ok are you at feeling happy / positive?</h2>
 
         <label for="assessment_happiness_text">Notes / transcription</label>
         
@@ -174,7 +182,7 @@
       </fieldset>
 
       <fieldset>
-        <legend>How ok are you at meeting people and doing things?</legend>
+        <h2>How ok are you at meeting people and doing things?</h2>
 
         <label for="assessment_social_text">Notes / transcription</label>
 
@@ -199,6 +207,11 @@
       </fieldset>
 
     </form>
+
+    <div class="controls">
+      <button id="previous">Previous</button>
+      <button id="next">Next</button>
+    </div>
 
   </body>
 </html>
