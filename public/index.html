@@ -6,7 +6,11 @@
     <title>Call Capture Prototype</title>
     <meta name="robots" content="noindex">
     <link rel="stylesheet" href="/styles/app.css">
+    <link rel="stylesheet" href="/styles/speech-recogniser.css">
     <script src="/javascripts/app.js"></script>
+    <script src="/javascripts/jquery.min.js"></script>
+    <script src="/javascripts/textarea-helper.js"></script>
+    <script src="/javascripts/speech-recogniser.js"></script>
   </head>
   <body>
 
@@ -185,6 +189,11 @@
         <label><input type="radio" name="assessment_social_target" value="4">(OKish - not OK)</label>
         <label><input type="radio" name="assessment_social_target" value="5">Not OK</label>
       </fieldset>
+
+      <div id="speech-content-elements">
+        <textarea id="speech-page-content" name="pageContent"></textarea>
+        <div class="speech-content-mic speech-mic">
+      </div>
 
     </form>
 
