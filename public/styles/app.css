@@ -1,6 +1,8 @@
 body {
   font-size: 30px;
   font-family: 'Helvetoca', sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 input,
@@ -18,7 +20,10 @@ button {
   position: relative;
   width: 1000000px;
   margin-left: 0vw;
+  transition: margin-left 200ms linear;
 }
+
+
 
 .fieldset,
 fieldset {
@@ -27,8 +32,37 @@ fieldset {
   height: 100vh;
   border-width: 0;
   text-align: center;
-  padding-top: 100px;
+  padding: 100px 0 0 0; margin: 0;
 }
+
+.controls {
+  position: fixed;
+  bottom: 0;
+  left: 0; right: 0;
+  background-color: black;
+}
+
+.controls button {
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  font-size: .8em;
+  padding: .5em;
+}
+
+.controls #previous {
+  float: left;
+}
+
+.controls #next {
+  float: right;
+}
+
+legend {
+  display: block;
+  position: relative;
+}
+
 
 .purple {
 	color: #55225D;
