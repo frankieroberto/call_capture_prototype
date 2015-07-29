@@ -6,12 +6,44 @@
     <title>Call Capture Prototype</title>
     <meta name="robots" content="noindex">
     <link rel="stylesheet" href="/styles/app.css">
+    <link rel="stylesheet" href="/styles/jquery-ui.min.css">
     <link rel="stylesheet" href="/styles/speech-recogniser.css">
     <script src="/javascripts/app.js"></script>
     <script src="/javascripts/jquery.min.js"></script>
+    <script src="/javascripts/jquery-ui.js"></script>
     <script src="/javascripts/textarea-helper.js"></script>
     <script src="/javascripts/speech-recogniser.js"></script>
     <script src="/javascripts/page-controls.js"></script>
+    <script>
+    $(function() {
+      var healthProblems = [
+        "Declined",
+        "Dementia",
+        "Arthritis",
+        "Asthma",
+        "Back Pain",
+        "Blind / Visually impaired",
+        "Cancer",
+        "COPD",
+        "Chronic Pain",
+        "Coronary Heart Disease",
+        "Deaf / Hearing Impaired",,
+        "Diabetes",
+        "Epilepsy",
+        "Axniety",
+        "Depression",
+        "Osteoporois",
+        "Parkkinson's Disease",
+        "Stroke",
+        "Multiple conditions",
+        "Physical disability"
+      ];
+      // $( "#caller" ).autocomplete({
+      //   source: healthProblems
+      // });
+    });
+    </script>
+
   </head>
   <body>
 
@@ -22,7 +54,7 @@
       </div>
 
 
-      <div class="fieldset">
+      <div class="fieldset ui-widget">
         <label for="caller">Caller name</label>
         <input type="text" id="caller" name="caller" class="textfield-advance"></input>
       </div>
